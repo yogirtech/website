@@ -1,0 +1,248 @@
+
+@media screen and (min-width: 767px) {
+  nav {
+    overflow: hidden;
+  }
+
+  nav {
+    label.navBars {
+      display: none;
+    }
+  }
+
+  nav .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  nav .logo {
+    margin: 7px 0;
+  }
+  nav {
+    ul.menu {
+      display: block;
+      box-shadow: none;
+      border: none;
+      float: right;
+      /*POSITION*/
+      position: static;
+    }
+  }
+  nav {
+    .menu {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  nav {
+    .menu {
+      li {
+        a {
+          border-bottom: 0;
+          padding: 20px 10px;
+        } 
+      }
+    }
+  }
+}
+
+nav {
+  position: relative;
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .mobile-menu {
+    display: block !important;
+  }
+  .logo {
+    display: inline-block;
+    color: black;
+    font-size: 1.7em;
+    line-height: 1.55em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 0;
+    /*POSITION*/
+    position: relative;
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+    /*POSITION*/
+    top: 60px;
+    right: 0;
+    left: 0;
+    a {
+      color: #292938;
+      font-weight: bold;
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #d9d9d9;
+      
+      &:hover {
+        background: #292938;
+        color: #efefef;
+      }
+    }
+  }
+  .navBars {
+    float: right;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    /*USER SELECTION*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+}
+.hero {
+  text-align: center;
+  position: relative;
+  height: auto;
+  padding-bottom: 80px;
+  background: #4f2f60 url("img/hero.jpg") center top no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+}
+.hero h1 {
+  margin: 50px 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+}
+.hero h1 span {
+  font: 700 60px/1 "Dancing Script", cursive;
+  display: block;
+}
+.hero h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 20px;
+}
+@media only screen and (min-width: 37.5em) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h1 span {
+    font-size: 76px;
+  }
+  .hero h2 {
+    width: 76%;
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 1120px;
+}
+
+.section {
+  padding: 60px 0;
+}
+.section__title {
+  font-size: 24px;
+  color: #3b3b58;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 14px 0;
+}
+.section__intro {
+  display: block;
+  text-align: center;
+  margin: 0 5% 30px;
+}
+@media only screen and (min-width: 43.75em) {
+  .section__intro {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.section--cta {
+  color: #454545;
+  background: #f1f1f1;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+.box__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box__title {
+  font-family: "Montserrat", sans-serif;
+}
+.box__more {
+  color: #ff4e5c;
+}
+.box__content {
+  color: #454545;
+  text-align: center;
+  padding: 20px;
+}
+.box__content > i {
+  color: #3b3b58;
+}
+.box__content:hover .box__more {
+  color: #ff3545;
+}
+.box__content:hover .box__more i {
+  padding-left: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+@media only screen and (min-width: 43.75em) {
+  .box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 12px 18px;
+  border-radius: 100px;
+  background: #ff4e5c;
+}
+.btn:hover {
+  background: #ff3545;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background: #3b3b58;
+}
+.footer p {
+  opacity: .65;
+}
