@@ -6,6 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SolutionComponent } from './solution/solution.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ProductDevelopmentComponent } from './product-development/product-development.component';
+import { MobileAutomationComponent } from './mobile-automation/mobile-automation.component';
+import { SoftwareSupportComponent } from './software-support/software-support.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
@@ -21,7 +26,12 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SolutionComponent,
+    ContactUsComponent,
+    ProductDevelopmentComponent,
+    MobileAutomationComponent,
+    SoftwareSupportComponent
   ],
   providers: [
     ApiService
