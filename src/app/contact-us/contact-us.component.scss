@@ -1,0 +1,14 @@
+.contact-us {
+  display: flex;
+  text-align: center;
+  .contact-us__image {
+    @media screen and (min-width: 767px) {
+      flex: 1;
+    }
+  }
+  .contact-us__content {
+    @media screen and (min-width: 767px) {
+      flex: 1;
+    }
+  }
+}

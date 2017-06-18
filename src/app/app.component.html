@@ -2,48 +2,25 @@
 <header>
   <nav>
     <div class="container">
-      <div class="logo">Logo</div>
+      <div class="logo"><a routerLink="/" routerLinkActive="active">Logo</a></div>
       <label class="navBars" (click)="toggleMobile()">
         <i class="fa fa-bars"></i>
       </label>
       <ul id="menu" class="menu">
-        <li><a [routerLink]="['']">Home</a></li>
-        <li><a [routerLink]="['about']">About</a></li>
-        <li><a href="#">Profolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a routerLink="/solution" routerLinkActive="active">Solutions</a>
+          <ul>
+            <li><a href="#">Product Development</a></li>
+            <li><a href="#">Software Support</a></li>
+            <li><a href="#">Web & Mobile Automation</a></li>
+          </ul>
+        </li>  
+        <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+        <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 </header>
-<section class="hero">
-  <h1><span>I'am looking ok?</span>Landing Page</h1>
-  <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-</section>
-<section class="section">
-  <div class="wrapper">
-    <h2 class="section__title">SOME TITLE</h2>
-    <p class="section__intro">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    </p>
-    <div class="box__grid">
-      <article class="box"><a class="box__content" href="#"><i class="fa fa-lightbulb-o fa-3x"></i>
-          <h3 class="box__title">Creative Idea</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><span class="box__more">Read more <i class="fa fa-arrow-right"></i></span></a></article>
-      <article class="box"><a class="box__content" href="#"><i class="fa fa-code fa-3x"></i>
-          <h3 class="box__title">Clean Code</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><span class="box__more">Read more <i class="fa fa-arrow-right"></i></span></a></article>
-      <article class="box"><a class="box__content" href="#"><i class="fa fa-mobile fa-3x"></i>
-          <h3 class="box__title">Mobile First</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><span class="box__more">Read more <i class="fa fa-arrow-right"></i></span></a></article>
-    </div>
-  </div>
-</section>
-<div class="section section--cta">
-  <div class="wrapper">
-    <h2 class="section__title">SOME TITLE</h2>
-    <p class="section__intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><a class="btn" href="#">TEXT BUTTON</a>
-  </div>
-</div>
+<router-outlet></router-outlet>
 <div class="footer">
-  <p>&copy; 2016 Landing Page</p>
+  <p>&copy; 2017 Footer</p>
 </div>
