@@ -1,24 +1,26 @@
-
 <header>
-  <nav>
-    <div class="container">
-      <div class="logo"><a routerLink="/" routerLinkActive="active">Logo</a></div>
-      <label class="navBars" (click)="toggleMobile()">
+    <div id="logo" class="menuUp">
+       <div class="logo"><a routerLink="/" routerLinkActive="active"><h3>YogiRTech</h3></a></div>
+       <div id="navToggle" class="navBar" (click)="toggleMobile($event)">
         <i class="fa fa-bars"></i>
-      </label>
-      <ul id="menu" class="menu">
-        <li><a routerLink="/solution" routerLinkActive="active">Solutions</a>
-          <ul>
-            <li><a href="#">Product Development</a></li>
-            <li><a href="#">Software Support</a></li>
-            <li><a href="#">Web & Mobile Automation</a></li>
-          </ul>
-        </li>  
-        <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
-        <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
-      </ul>
+      </div>
     </div>
-  </nav>
+    <nav>
+        <ul>
+          <li>
+              <a (click)="toggleSubMenuMobile()" id="expand">Solutions<span class="toggle">Expand</span><span class="caret"></span></a>
+              <nav id="sub-menu">
+                  <ul class="sub-nav">
+                    <li><a routerLink="/product-development" routerLinkActive="active">Product Development</a></li>
+                    <li><a routerLink="/software-support" routerLinkActive="active">Software Support</a></li>
+                    <li><a routerLink="/mobile-automation" routerLinkActive="active">Web & Mobile Automation</a></li>
+                  </ul>
+              </nav>
+          </li>
+          <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+          <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
 <router-outlet></router-outlet>
 <div class="footer">

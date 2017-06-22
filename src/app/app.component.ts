@@ -19,8 +19,16 @@ export class AppComponent {
     this.title = this.api.title;
   }
 
-  toggleMobile() {
-    let menu = $('#menu');
-    menu.toggleClass('mobile-menu');
+  toggleMobile(e) {
+    e.preventDefault();
+    $('header > nav').slideToggle('medium');
+    $('#logo').toggleClass('menuUp menuDown');
+  }
+
+  toggleSubMenuMobile() {
+    if (<any>window.innerWidth <= '767') {
+      $('#sub-menu').toggleClass('show-mobile-sub-menu');
+      $('#expand').children('.toggle').html($('#expand').children('.toggle').html() === 'close' ? 'expand' : 'close');
+    }
   }
 }
