@@ -1,9 +1,12 @@
 .hero {
+  dispaly: table;
   text-align: center;
   position: relative;
-  height: auto;
-  padding-bottom: 80px;
-  background: #4f2f60 url("img/hero.jpg") center top no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 150px 0;
+
+  background-image: url("./img/background.jpg");
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -24,6 +27,42 @@
   font-weight: 400;
   padding: 20px;
 }
+
+.hero:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.hero-brand {
+  margin-bottom: 75px;
+  display: inline-block;
+}
+
+.hero-brand:hover {
+  opacity: .75;
+}
+.tagline {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin: 45px 0 75px 0;
+  color: #fff;
+}
+
 @media only screen and (min-width: 37.5em) {
   .hero h1 {
     font-size: 50px;
@@ -119,17 +158,71 @@
   }
 }
 
+
+
+/* ==================================================
+  Elements
+  ================================================== */
 .btn {
+  background-color: #ff4e5c;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-  padding: 12px 18px;
-  border-radius: 100px;
-  background: #ff4e5c;
+  padding: 15px 45px;
+  border-radius: 50px;
 }
+
 .btn:hover {
-  background: #ff3545;
+  background-color: #E04F00;
+  color: #fff;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.btn-ghost {
+  border: 3px solid #fff;
+  background-color: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: #fff;
+  color: #199EB8;
+}
+
+section {
+  padding: 85px 0;
+}
+
+.card {
+  position: relative;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.scrolltop {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #199EB8;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+.scrolltop:hover, .scrolltop:active, .scrolltop:focus {
+  color: #fff !important;
+  opacity: .75;
 }

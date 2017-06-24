@@ -200,6 +200,17 @@ header > nav > ul > li > nav > ul > li:hover > a {
     } 
 }
 
+.logo
+{
+  display: inline-block;
+  width: 200px;
+  height: 56px;
+  margin-top: 5px;
+  background-size: auto 43px;
+  background-image: url(../img/yogir.png);
+  background-repeat: no-repeat;
+}
+
 .footer {
   color: #fff;
   text-align: center;
